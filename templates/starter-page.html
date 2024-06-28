@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Starter Page - Arsha Bootstrap Template</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+
+  <!-- Favicons -->
+  <link href="../static/assets/img/favicon.png" rel="icon" />
+  <link href="../static/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="../static/assets/css/main.css" rel="stylesheet" />
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Jun 14 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="{{ url_for('index') }}" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">CRFS Señas</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Inicio</a></li>
+          <li><a href="index.html#about">Sobre nosotros</a></li>
+          <li><a href="index.html#services">Servicios</a></li>
+          <li><a href="index.html#team">Equipo</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Dropdown</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown">
+                <a href="#"><span>Deep Dropdown</span>
+                  <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="current">Starter Page</li>
+          </ol>
+        </nav>
+        <h1>Starter Page</h1>
+      </div>
+    </div>
+
+    <!-- Starter Section Section -->
+    <section class="starter-container">
+      <div style="display: flex; flex-direction: column; margin-top: 2px; border: 4px solid #3d4d6a;  border-radius: 15px;" class="starter-container" data-aos="fade-up">
+        <div id="videoContainer"></div>
+        <!-- Contenedor para el video -->
+        <script>
+          let stream; // Variable global para almacenar el stream de la cámara
+          let mediaRecorder; // Variable global para el grabador de medios
+          let recordedChunks = []; // Variable para almacenar los fragmentos de video grabados
+      
+          async function encenderCamara() {
+            try {
+              // Obtener el stream de la cámara
+              stream = await navigator.mediaDevices.getUserMedia({
+                video: true,
+              });
+      
+              // Mostrar el stream en un elemento de video
+              const videoElement = document.createElement("video");
+              videoElement.id = "videoStream"; // Asignamos un id para referenciarlo fácilmente
+              videoElement.srcObject = stream;
+              videoElement.autoplay = true;
+      
+              // Agregar el video al contenedor gris
+              const videoContainer = document.getElementById("videoContainer");
+              videoContainer.appendChild(videoElement);
+      
+              // Configurar el grabador de medios
+              mediaRecorder = new MediaRecorder(stream);
+              mediaRecorder.ondataavailable = function (event) {
+                if (event.data.size > 0) {
+                  recordedChunks.push(event.data);
+                }
+              };
+            } catch (error) {
+              console.error("Error al acceder a la cámara:", error);
+            }
+          }
+      
+          function apagarCamara() {
+            if (stream) {
+              const videoElement = document.getElementById("videoStream");
+              if (videoElement) {
+                const streamTracks = stream.getTracks();
+                streamTracks.forEach((track) => track.stop());
+                videoElement.srcObject = null;
+                videoElement.parentNode.removeChild(videoElement); // Eliminar del contenedor
+              }
+            }
+          }
+      
+          function iniciarGrabacion() {
+            if (mediaRecorder && mediaRecorder.state === "inactive") {
+              recordedChunks = []; // Limpiar los fragmentos grabados anteriores
+              mediaRecorder.start();
+            }
+          }
+      
+          function detenerGrabacion() {
+            if (mediaRecorder && mediaRecorder.state === "recording") {
+              mediaRecorder.stop();
+              mediaRecorder.onstop = async function () {
+                const blob = new Blob(recordedChunks, {
+                  type: "video/webm",
+                });
+                const formData = new FormData();
+                formData.append("video", blob, "video.webm");
+      
+                try {
+                  const response = await fetch("/predict", {
+                    method: "POST",
+                    body: formData,
+                  });
+      
+                  const result = await response.json();
+                  if (result.prediction) {
+                    document.getElementById("textarea_design").value = result.prediction;
+                  } else if (result.error) {
+                    alert(result.error);
+                  }
+                } catch (error) {
+                  console.error("Error al enviar el video:", error);
+                }
+              };
+            }
+          }
+        </script>
+        <div class="buttons">
+          <button type="button" class="btn btn-primary pb-6" onclick="encenderCamara()">Encender Camara</button>
+          <button type="button" class="btn btn-warning pb-6" onclick="apagarCamara()">Apagar Camara</button>
+          <button type="button" class="btn btn-success pb-6" onclick="iniciarGrabacion()">Iniciar Grabacion</button>
+          <button type="button" class="btn btn-danger pb-6" onclick="detenerGrabacion()">Detener Grabacion</button>
+        </div>
+      </div>
+      
+
+      <div class="container_textarea" data-aos="fade-up">
+        <textarea name="" id="textarea_design" placeholder="Traducción"></textarea>
+    </section>
+
+    <style>
+      .starter-section {
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 20px;
+      }
+
+      .gris {
+        display: flex;
+        width: 40vw;
+        height: 80vh;
+        border: 5px solid black;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .azul {
+        display: flex;
+        width: 40vw;
+        height: 80vh;
+        border: 5px solid black;
+        justify-content: center;
+        align-items: center;
+      }
+
+      textarea {
+        height: 200px;
+        width: 40vw;
+      }
+
+      button {
+        height: 50px;
+        margin: 0 10px;
+      }
+
+      #videoStream {
+        max-width: 500px;
+        max-height: 500px;
+      }
+    </style>
+
+  </main>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/assets/vendor/aos/aos.js"></script>
+  <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="../static/assets/js/main.js"></script>
+</body>
+
+</html>
