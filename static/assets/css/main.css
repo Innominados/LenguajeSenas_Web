@@ -2434,8 +2434,8 @@ section,
   padding-bottom: 5px;
 }
 .buttons button {
-  flex: 1;
-  margin: 0 5px;
+  display: flex;
+  padding-bottom: 20px;
 }
 
 

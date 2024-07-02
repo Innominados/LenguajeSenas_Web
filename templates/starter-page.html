@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
@@ -150,6 +150,11 @@
             if (mediaRecorder && mediaRecorder.state === "inactive") {
               recordedChunks = []; // Limpiar los fragmentos grabados anteriores
               mediaRecorder.start();
+              document.querySelector('.btn-success').disabled = true;
+              setTimeout(() => {
+                detenerGrabacion();
+                document.querySelector('.btn-success').disabled = false;
+              }, 5000); // Detener grabación después de 5 segundos
             }
           }
       
@@ -186,7 +191,6 @@
           <button type="button" class="btn btn-primary pb-6" onclick="encenderCamara()">Encender Camara</button>
           <button type="button" class="btn btn-warning pb-6" onclick="apagarCamara()">Apagar Camara</button>
           <button type="button" class="btn btn-success pb-6" onclick="iniciarGrabacion()">Iniciar Grabacion</button>
-          <button type="button" class="btn btn-danger pb-6" onclick="detenerGrabacion()">Detener Grabacion</button>
         </div>
       </div>
       
