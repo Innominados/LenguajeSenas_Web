@@ -28,12 +28,21 @@ lstm_model = load_model(model_path)
 
 # Funciones para procesamiento de imágenes
 def mediapipe_detection(image, model):
+    # Reflejar horizontalmente la imagen
+    image = cv2.flip(image, 1)
+    
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image.flags.writeable = False
     results = model.process(image)
     image.flags.writeable = True
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+    
+    # Reflejar nuevamente la imagen para que esté en la orientación original
+    image = cv2.flip(image, 1)
+    
     return image, results
+
+
 
 def extract_keypoints(results):
     pose = np.array([[res.x, res.y, res.z, res.visibility] for res in results.pose_landmarks.landmark]).flatten() if results.pose_landmarks else np.zeros(33*4)
@@ -123,6 +132,10 @@ def starter_page():
 @app.route('/service-details')
 def service_details():
     return render_template('service-details.html')
+
+@app.route('/tutorial-page')
+def tutorial_page():
+    return render_template('tutorial-page.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
