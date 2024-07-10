@@ -111,10 +111,10 @@ Para clonar este proyecto, sigue los siguientes pasos:
 
 Si tienes alguna pregunta, no dudes en contactarnos:
 
-- Cristian: [cristian@correo.com](mailto:cristian@correo.com)
-- Frandy: [frandy@correo.com](mailto:frandy@correo.com)
-- Jensey: [jensey@correo.com](mailto:jensey@correo.com)
-- Ronald: [ronald@correo.com](mailto:ronald@correo.com)
+- Frandy Aquino: [frandy@correo.com](mailto:frandy@correo.com)
+- Ronald Serré: [ronald@correo.com](mailto:ronald@correo.com)
+- Cristian Encarnación: [cristian@correo.com](mailto:cristian@correo.com)
+- Jensey Jimenez: [jensey@correo.com](mailto:jensey@correo.com)
 
 ## 📜 Licencia
 
