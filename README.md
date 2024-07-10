@@ -29,7 +29,7 @@ GestureGuide/
 ├── models/
 │   └── actions_15.keras
 └── README.md
-
+ ```
 ## 🛠️ Tecnologías Utilizadas
 
 - **Flask**: Framework web para Python.
