@@ -27,23 +27,42 @@ GestureGuide/
 │   ├── starter-page.html
 │   └── service-details.html
 ├── models/
-│   └── actions_15.keras
+│   └── modeloprueba.keras
 └── README.md
  ```
 ## 🛠️ Tecnologías Utilizadas
 
 - **Flask**: Framework web para Python.
-- **Bootstrap**: Framework CSS para un diseño responsive.
-- **Keras**: Biblioteca de aprendizaje profundo para construir y entrenar modelos de IA.
-- **Mediapipe**: Soluciones de visión por computadora para la detección de gestos.
+- **Flask-CORS**: Extensión de Flask para manejar Cross-Origin Resource Sharing (CORS).
+- **OpenCV (cv2)**: Biblioteca de visión por computadora para el procesamiento de imágenes y videos.
+- **NumPy (np)**: Biblioteca para el cálculo numérico y el manejo de arreglos multidimensionales.
+- **Mediapipe (Holistic)**: Biblioteca de Google para soluciones de visión por computadora, utilizada para la detección de poses y gestos.
+- **TensorFlow y Keras (load_model)**: Biblioteca y API de alto nivel para construir y entrenar modelos de aprendizaje profundo.
+- **gTTS**: Google Text-to-Speech, una biblioteca para convertir texto a habla.
+- **Pygame**: Biblioteca para desarrollar videojuegos en Python, también utilizada para reproducir audio.
+- **Werkzeug (secure_filename)**: Biblioteca que complementa Flask, proporcionando utilidades adicionales.
+- **Otros módulos de Python**: 
+  - **os**: Interacción con el sistema operativo.
+  - **time (sleep)**: Funciones relacionadas con el tiempo.
+  - **typing (NamedTuple)**: Anotaciones de tipo en Python.
 
 ## 📋 Requisitos
 
 - Python 3.11
 - Flask
-- Keras
+- Flask-CORS
+- OpenCV (cv2)
+- NumPy (np)
 - Mediapipe
-- Otros paquetes necesarios listados en `requirements.txt`
+- TensorFlow y Keras
+- gTTS
+- Pygame
+- Otros módulos de Python:
+  - os
+  - time
+  - typing
+  - Werkzeug
+
 
 ## 🛠️ Instalación
 
@@ -53,22 +72,16 @@ Para clonar este proyecto, sigue los siguientes pasos:
 
 1. **Clona el repositorio**:
     ```sh
-    git clone https://github.com/tu_usuario/CRFS_Señas.git
-    cd CRFS_Señas
+    git clone https://github.com/FrandyAquino/LenguajeSenas_Web.git
+    cd LenguajeSenas_Web
     ```
 
-2. **Crea un entorno virtual**:
-    ```sh
-    python3 -m venv venv
-    source venv/bin/activate  # En Windows usa `venv\Scripts\activate`
-    ```
-
-3. **Instala las dependencias**:
+2. **Instala las dependencias**:
     ```sh
     pip install -r requirements.txt
     ```
 
-4. **Ejecuta la aplicación**:
+3. **Ejecuta la aplicación**:
     ```sh
     python app.py
     ```
