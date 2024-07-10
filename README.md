@@ -1,7 +1,5 @@
 # 🌐 CRFS Señas - Traducción de Lenguaje de Señas a Texto
 
-![CRFS Señas](https://via.placeholder.com/800x300)
-
 ## 🧠 Proyecto Final - Inteligencia Artificial y Lenguaje de Señas
 
 Bienvenidos a **CRFS Señas**, un proyecto innovador que traduce lenguaje de señas a texto en tiempo real. Desarrollado por Cristian, Frandy, Jensey, y Ronald, este proyecto utiliza modelos de aprendizaje automático y tecnologías avanzadas de detección de gestos para facilitar la comunicación.
