@@ -1,4 +1,4 @@
-# 🌐 CRFS Señas - Traducción de Lenguaje de Señas a Texto
+# 🌐 GestureGuide - Traducción de Lenguaje de Señas a Texto
 
 ## 🧠 Proyecto Final - Inteligencia Artificial y Lenguaje de Señas
 
