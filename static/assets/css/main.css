@@ -2439,3 +2439,42 @@ section,
 }
 
 
+.gallery-videos-tutorials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.video-card {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.button-container {
+  margin-top: 10px; /* Espacio entre la imagen y el botón */
+}
+
+.watch-button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+  background-color: #0056b3;
+}
