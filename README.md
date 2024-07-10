@@ -1,2 +1,1 @@
-# Se-as_web
-# LenguajeSe-as_Web
+# LenguajeSeñas_Web
