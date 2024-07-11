@@ -111,10 +111,10 @@ Para clonar este proyecto, sigue los siguientes pasos:
 
 Si tienes alguna pregunta, no dudes en contactarnos:
 
-- Frandy Aquino: [frandy@correo.com](mailto:frandy@correo.com)
-- Ronald Serré: [ronald@correo.com](mailto:ronald@correo.com)
-- Cristian Encarnación: [cristian@correo.com](mailto:cristian@correo.com)
-- Jensey Jimenez: [jensey@correo.com](mailto:jensey@correo.com)
+- [Frandy Aquino](https://github.com/FrandyAquino) 👨🏽
+- [Ronald Serre](https://github.com/ronaldserre) 🧑‍💻
+- [Cristian Encarnación](https://github.com/cristianEncarnacion) 🧑🏽‍🦲
+- [Jensey Jimenez](https://github.com/JenseyJim) 🧒 
 
 ## 📜 Licencia
 
