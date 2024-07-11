@@ -1,0 +1,10 @@
+Flask==2.0.1
+Flask-CORS==3.1.1
+opencv-python==4.5.3.56
+numpy==1.21.1
+mediapipe==0.8.7.3
+tensorflow==2.7.0
+keras==2.8.0
+gTTS==2.2.3
+pygame==2.1.0
+Werkzeug==2.0.1
