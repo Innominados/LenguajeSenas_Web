@@ -1,38 +1,118 @@
 [
     {
-      "title": "Hola",
+      "title": "Hello",
       "img": "https://i.pinimg.com/originals/6e/6b/0e/6e6b0e1dfdad42dc17e3b508f2d75dbd.jpg",
       "alt": "Video 1",
       "url": "https://www.youtube.com/watch?v=SsLvqfTXo78&pp=ygUIaG9sYSBhc2w%3D"
     },
     {
-      "title": "Gracias",
+      "title": "Thanks",
       "img": "https://aprendelenguadesignos.com/wp-content/uploads/2011/07/ggracias_thumb.jpg",
       "alt": "Video 2",
       "url": "https://www.youtube.com/watch?v=EPlhDhll9mw&pp=ygULZ3JhY2lhcyBhc2w%3D"
     },
     {
-      "title": "Adios",
+      "title": "Goodbye",
       "img": "https://mejorconsalud.as.com/wp-content/uploads/2022/10/adios-signo-768x512.jpg",
       "alt": "Video 3",
       "url": "https://www.youtube.com/watch?v=evr40BNeIfM&ab_channel=GrabOfficial"
     },
     {
-      "title": "Por favor",
+      "title": "Please",
       "img": "https://th.bing.com/th/id/OIP.Je_X0527CL4RnQId6omN_wAAAA?rs=1&pid=ImgDetMain",
       "alt": "Video 4",
       "url": "https://www.youtube.com/watch?v=wtNN6H27L3k&ab_channel=ASLKids"
     },
     {
-      "title": "Perdón",
+      "title": "Sorry",
       "img": "https://img.freepik.com/premium-vector/vector-illustration-breast-cancer-awareness_492281-3769.jpg",
       "alt": "Video 5",
       "url": "https://www.youtube.com/watch?v=osP-ZD3H3ms&ab_channel=ASLRochelle"
     },
     {
-      "title": "Mi Nombre",
+      "title": "My name",
       "img": "https://cdni.iconscout.com/illustration/premium/thumb/woman-apply-cosmetic-cream-on-hand-9384740-7648000.png",
-      "alt": "Video 1",
+      "alt": "Video 6",
       "url": "https://www.youtube.com/watch?v=D1lzwJQUolE&ab_channel=SignLanguageDictionary"
+    },
+    {
+      "title": "Fish",
+      "img": "https://cdni.iconscout.com/illustration/premium/thumb/woman-apply-cosmetic-cream-on-hand-9384740-7648000.png",
+      "alt": "Video 7",
+      "url": "https://www.youtube.com/watch?v=WWmOTMu5-Zw"
+    },
+    {
+      "title": "Want",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TT-b21-nxovLNHjEcrFP3gYVUfBdRCJMVDdPC_k7sjTbPm2t",
+      "alt": "Video 8",
+      "url": "https://www.youtube.com/watch?v=1cTlrAne65A"
+    },
+    {
+      "title": "Family",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1SKrmf3GGkDX7ieJoeA7YxU9rE-WrLIQ_o_Xni9Kf0ePnwMV",
+      "alt": "Video 8",
+      "url": "https://www.youtube.com/watch?v=XUg1eKl65p4&t=11s"
+    },
+    {
+      "title": "Wednesday",
+      "img": "https://th.bing.com/th/id/OIP.s3ZBd_oac7DMBW8YAqS7MwAAAA?pid=ImgDet&w=170&h=177&c=7",
+      "alt": "Video 8",
+      "url": "https://www.youtube.com/watch?v=btWz421kwLY"
+    },
+    {
+      "title": "Play",
+      "img": "https://i.pinimg.com/736x/21/b4/69/21b469056f3246be86e0a315b756cc39--lsm-sign-language.jpg",
+      "alt": "Video 8",
+      "url": "https://youtu.be/arq-z2VbHko?si=F7BZ__z2H0MQpiKO"
+    },
+    {
+      "title": "Help",
+      "img": "https://i.pinimg.com/736x/92/84/f6/9284f6362941a01a7f4c4db210e21399.jpg",
+      "alt": "Video 8",
+      "url": "https://youtu.be/ziypTZ7HGR4?si=u6KQq_UDnGSHZuI8"
+    },
+    {
+      "title": "More",
+      "img": "https://i.pinimg.com/736x/7c/1e/00/7c1e00cb542eadbf477698d4cfdc8ee1--lsm-sign-language.jpg",
+      "alt": "Video 8",
+      "url": "https://youtu.be/MbYLwyj72TY?si=APBgrcHPvaW8QH5L"
+    },
+    {
+      "title": "Eat",
+      "img": "https://th.bing.com/th/id/OIP.lsQOJyubgHqnasZdaVhRqQAAAA?pid=ImgDet&w=170&h=170&c=7",
+      "alt": "Video 8",
+      "url": "https://youtu.be/d9hsNSJCs2A?si=T29tGKeUJbLVoYYq"
+    },
+    {
+      "title": "Run",
+      "img": "https://th.bing.com/th/id/OIP.YRnqxvFyVLWWlPVNG9cOQQAAAA?pid=ImgDet&w=170&h=177&c=7",
+      "alt": "Video 8",
+      "url": "https://youtu.be/3SfSTfhE5wU?si=qS88MWQMxlm3FY0i"
+    },
+    {
+      "title": "Not",
+      "img": "https://i.pinimg.com/736x/7c/1e/00/7c1e00cb542eadbf477698d4cfdc8ee1--lsm-sign-language.jpg",
+      "alt": "Video 8",
+      "url": "https://youtu.be/6j0DsflHdQM?si=CL5CtcwQcF9Vwf1H"
+    },
+    {
+      "title": "Yes",
+      "img": "https://th.bing.com/th/id/OIP.vu5FmMIGhY_gfVUbN_H6JwAAAA?pid=ImgDet&w=126&h=178&c=7",
+      "alt": "Video 8",
+      "url": "https://youtu.be/0usayvOXzHo?si=lW2EmyuIVw7ILarO"
+    },
+    {
+      "title": "Good Morning",
+      "img": "https://th.bing.com/th/id/OIP.WwgMgxFXCPwLbIo1rV2IdgAAAA?pid=ImgDet&w=199&h=199&c=7",
+      "alt": "Video 8",
+      "url": "https://youtu.be/Joi3nnSpbO4?si=I76Pb1fVRHwxigdy"
+    },
+    {
+      "title": "Bless You",
+      "img": "https://th.bing.com/th/id/OIP.ZH7d4_cFD7DzYK4Z1PvjeAAAAA?pid=ImgDet&w=170&h=202&c=7",
+      "alt": "Video 8",
+      "url": "https://youtu.be/xJo19d3DwAs?si=2AMlN7imZv98LPvr"
     }
   ]
+
+  
