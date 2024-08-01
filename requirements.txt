@@ -1,5 +1,5 @@
 Flask==2.0.1
-Flask-CORS==3.1.1
+Flask-CORS
 opencv-python==4.5.3.56
 numpy==1.21.1
 mediapipe==0.8.7.3
